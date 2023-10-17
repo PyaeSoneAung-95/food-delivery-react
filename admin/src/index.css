@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-200;
+  }
+}
+
+@layer utilities {
+  .form-group {
+    @apply my-3;
+  }
+  .input-label {
+    @apply block mb-2 text-base text-gray-600;
+  }
+  .input-label__error {
+    @apply mt-2 block text-sm text-red-500 ml-1;
+  }
+  .input-control {
+    @apply px-3 h-[45px] rounded-sm border text-base w-full;
+  }
+  .btn-submit {
+    @apply px-6 h-[48px] rounded-sm bg-blue-400 enabled:hover:bg-blue-500 text-white 
+    font-semibold disabled:cursor-not-allowed;
+  }
+}
